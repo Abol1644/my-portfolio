@@ -3,6 +3,7 @@
 Where i share my work experience, work samples and things i created so far.
 
 IN A MISSIN OF GREATNESS
+
 ```js
 export default tseslint.config([
   globalIgnores(['dist']),
