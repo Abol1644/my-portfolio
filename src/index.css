@@ -1,5 +1,37 @@
+
+
+@font-face {
+  font-family: Nunito;
+  src: url('@/assets/fonts/Nunito-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Nunito-Black;
+  src: url('@/assets/fonts/Nunito-Black.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Nunito-Bold;
+  src: url('@/assets/fonts/Nunito-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Nunito-BlackItalic;
+  src: url('@/assets/fonts/Nunito-BlackItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Nunito-BoldItalic;
+  src: url('@/assets/fonts/Nunito-BoldItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Nunito-Italic;
+  src: url('@/assets/fonts/Nunito-Italic.woff2') format('woff2');
+}
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Nunito;
   line-height: 1.5;
   font-weight: 400;
 
@@ -13,3 +45,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1 {
+  font-family: Nunito-black;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: Nunito-Bold;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: Nunito-Bold;
+  font-weight: 500;
+}
