@@ -1,6 +1,19 @@
+:root {
+  background-image: url('../images/paper-bg.jpg');
+  background-size: cover;
+}
+
+.ethernal-shadow-background {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
 .profile {
-  width: 600px;
-  box-shadow: 0 20px 20px #eeeeee96;
+  width: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -14,7 +27,15 @@
 
 .profile-image {
   width: 200px;
-  border-radius: 20px;
+  border-radius: 300px;
+  box-shadow: 0 20px 10px -20px #03c39985 ;
+  transition: all 0.2s ease-in-out;
+}
+
+.profile-image:hover {
+  box-shadow: 0 30px 15px -20px #03c39985 ;
+  scale: 1.1;
+  transition: all 0.2s ease-in-out;
 }
 
 .name-wraper {
