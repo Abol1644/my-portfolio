@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
-import { resolve } from 'path'
+// import { resolve } from 'path'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
@@ -56,10 +56,4 @@ export default defineConfig({
     })
   ],
   base: '/my-portfolio/',
-  resolve: {
-    alias: {
-      '@': resolve(__dirname, 'src'),
-      '@assets': resolve(__dirname, 'src/assets'),
-    },
-  },
 })

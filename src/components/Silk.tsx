@@ -4,9 +4,10 @@
 
 /* eslint-disable react/no-unknown-property */
 import React, { forwardRef, useMemo, useRef, useLayoutEffect } from "react";
-import { Canvas, useFrame, useThree, RootState } from "@react-three/fiber";
+// import { Canvas, useFrame, useThree, RootState } from "@react-three/fiber";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Color, Mesh, ShaderMaterial } from "three";
-import { IUniform } from "three";
+// import { IUniform } from "three";
 
 type NormalizedRGB = [number, number, number];
 
@@ -29,7 +30,7 @@ interface SilkUniforms {
   uColor: UniformValue<Color>;
   uRotation: UniformValue<number>;
   uTime: UniformValue<number>;
-  [uniform: string]: IUniform;
+  [uniform: string]: UniformValue<any>;
 }
 
 const vertexShader = `
@@ -106,7 +107,17 @@ const SilkPlane = forwardRef<Mesh, SilkPlaneProps>(function SilkPlane(
     }
   }, [ref, viewport]);
 
-  useFrame((_state: RootState, delta: number) => {
+  // useFrame((_state: RootState, delta: number) => {
+  //   const mesh = ref as React.MutableRefObject<Mesh | null>;
+  //   if (mesh.current) {
+  //     const material = mesh.current.material as ShaderMaterial & {
+  //       uniforms: SilkUniforms;
+  //     };
+  //     material.uniforms.uTime.value += 0.1 * delta;
+  //   }
+  // });
+
+  useFrame((_state: any, delta: number) => {
     const mesh = ref as React.MutableRefObject<Mesh | null>;
     if (mesh.current) {
       const material = mesh.current.material as ShaderMaterial & {
