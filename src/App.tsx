@@ -83,6 +83,17 @@ function App() {
           </div>
         </div>
       </div>
+      
+      <div className="projects-section">
+        <div className="graphics">
+          graphics
+        </div>
+
+        <div className="programming">
+          ui ux
+        </div>
+      </div>
+
     </div>
     </>
   )
