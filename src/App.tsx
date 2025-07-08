@@ -41,7 +41,7 @@ function App() {
         speed={5}
         scale={0.8}
         color="#7B7481"
-        noiseIntensity={0.4}
+        noiseIntensity={0.8}
         rotation={0}
       />
     </Box>
