@@ -1,4 +1,4 @@
-
+import { useState } from 'react';
 // import SplashCursor from '@/components/SplashCursor'
 // import Aurora from '@/components/Aurora'
 import Silk from './components/Silk'
@@ -15,6 +15,8 @@ import waveEmoji from './assets/images/wave-emoji.png'
 import iranFlag from './assets/images/iran-flag.png'
 
 function App() {
+  const [hoveringGraphics, setHoveringGraphics] = useState(false);
+  const [hoveringPrograming, setHoveringPrograming] = useState(false);
 
   return (
     <>
@@ -85,12 +87,27 @@ function App() {
       </div>
       
       <div className="projects-section">
-        <div className="graphics">
-          graphics
+        <div
+          className="graphics"
+          
+        >
+          <h1
+            className={`graphics-title ${hoveringPrograming ? 'hovered' : ''}`}
+            onMouseEnter={() => setHoveringGraphics(true)}
+            onMouseLeave={() => setHoveringGraphics(false)}
+          >
+            GRAPHICS
+          </h1>
         </div>
 
         <div className="programming">
-          ui ux
+          <h1
+            className={`programming-title ${hoveringGraphics ? 'hovered' : ''}`}
+            onMouseEnter={() => setHoveringPrograming(true)}
+            onMouseLeave={() => setHoveringPrograming(false)}
+          >
+            UI & UX
+          </h1>
         </div>
       </div>
 

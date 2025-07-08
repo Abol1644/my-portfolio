@@ -30,6 +30,26 @@
   src: url('./assets/fonts/Nunito-Italic.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: Heathergreen;
+  src: url('./assets/fonts/Heathergreen.woff2')
+}
+
+@font-face {
+  font-family: Ubuntu-Bold;
+  src: url('./assets/fonts/Ubuntu-B.ttf')
+}
+
+@font-face {
+  font-family: Ubuntu-Black;
+  src: url('./assets/fonts/Ubuntu-BI.ttf')
+}
+
+@font-face {
+  font-family: Ubuntu-Reg;
+  src: url('./assets/fonts/Ubuntu-R.ttf')
+}
+
 :root {
   font-family: Nunito;
   line-height: 1.5;
